@@ -1,7 +1,80 @@
 /* Place your CSS styles in this file */
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 h1 {
     text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: normal;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.links {
+    list-style-type: none; 
+    padding: 0;
+    text-align: center; 
+    margin: 20px;
+}
+
+.links li {
+    margin: 10px 0; 
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.links li:hover {
+    background-color: lightgray;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 10px 20px; 
+    color: black;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    padding: 0.7rem;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: white;
+}
+
+.maincontent {
+    margin-left: 300px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.openmenu {
+    display: none;
+}
+
+@media (max-width: 800px ) {
+    .sidebar {
+        display: none;;
+    }
+
+    .maincontent {
+        margin-left: 0px;
+    }
+
+    #openmenu {
+        display: block;
+        position: fixed;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+
+
 }
